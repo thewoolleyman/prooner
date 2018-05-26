@@ -1,0 +1,19 @@
+buildscript {
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlinVersion"
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    classpath "org.jetbrains.kotlinx:kotlinx-gradle-serialization-plugin:$serializationVersion"
+  }
+}
+
+apply plugin: "kotlin"
+apply from: "../../kotlin-jvm-config.gradle"
+apply plugin: "kotlin-spring"
+apply plugin: "kotlinx-serialization"
+
+dependencies {
+  compile "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
+  compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+  compile "org.springframework:spring-web:$springVersion"
+  compile "org.springframework:spring-webflux:$webFluxVersion"
+}

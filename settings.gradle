@@ -1,1 +1,5 @@
 rootProject.name = 'prooner'
+
+include "apps:server"
+
+include "components:home"
