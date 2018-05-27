@@ -19,7 +19,7 @@ mainClassName = "com.prooner.AppKt"
 dependencies {
   compile project(":components:home")
 
-  compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlinVersion"
+  compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
   compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
 }
 
