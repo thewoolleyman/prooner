@@ -6,12 +6,12 @@ buildscript {
 
 plugins {
   id "application"
-  id "com.github.johnrengelman.shadow" version "2.0.1"
-}
+  id "com.github.johnrengelman.shadow" version "2.0.4"
+  id "kotlin"
+  id "org.jetbrains.kotlin.plugin.spring" version "1.2.41"
+ }
 
-apply plugin: "kotlin"
 apply from: "../../kotlin-jvm-config.gradle"
-apply plugin: "kotlin-spring"
 apply plugin: 'org.springframework.boot'
 
 mainClassName = "com.prooner.AppKt"
@@ -19,7 +19,6 @@ mainClassName = "com.prooner.AppKt"
 dependencies {
   compile project(":components:home")
 
-  compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
   compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
 }
 

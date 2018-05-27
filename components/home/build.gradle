@@ -6,9 +6,12 @@ buildscript {
   }
 }
 
-apply plugin: "kotlin"
+plugins {
+  id "kotlin"
+  id "org.jetbrains.kotlin.plugin.spring" version "1.2.41"
+}
+
 apply from: "../../kotlin-jvm-config.gradle"
-apply plugin: "kotlin-spring"
 apply plugin: "kotlinx-serialization"
 
 dependencies {

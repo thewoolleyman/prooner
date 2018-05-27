@@ -1,6 +1,6 @@
 buildscript {
   ext {
-    kotlinVersion = "1.2.31"
+    kotlinVersion = "1.2.41"
     serializationVersion = "0.5.0"
     springBootVersion = "2.0.2.RELEASE"
     springVersion = "5.0.6.RELEASE"
@@ -17,6 +17,10 @@ buildscript {
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
   }
+}
+
+plugins {
+  id 'idea'
 }
 
 allprojects {
@@ -44,9 +48,8 @@ subprojects {
   version = project.version
 }
 
-//task clean {
-//  dependsOn subprojects.collect { it.tasks.matching { it.name == 'clean' } }
-//}
+task clean {
+  dependsOn subprojects.collect { it.tasks.matching { it.name == 'clean' } }
+}
 
 defaultTasks "tasks"
-apply plugin: 'idea'
