@@ -20,6 +20,6 @@ dependencies {
   compile project(":components:home")
 
   compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlinVersion"
-  compile "org.springframework.boot:spring-boot-starter-web"
+  compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
 }
 

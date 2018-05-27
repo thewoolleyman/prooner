@@ -1,10 +1,10 @@
 buildscript {
   ext {
     kotlinVersion = "1.2.31"
-    serializationVersion = "0.3"
-    springBootVersion = "2.0.0.M7"
-    springVersion = "5.0.2.RELEASE"
-    webFluxVersion = "5.0.2.RELEASE"
+    serializationVersion = "0.5.0"
+    springBootVersion = "2.0.2.RELEASE"
+    springVersion = "5.0.6.RELEASE"
+    webFluxVersion = "5.0.6.RELEASE"
   }
 
   repositories {
