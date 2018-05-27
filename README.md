@@ -4,9 +4,23 @@
 
 # Setup
 
+## Dev Env
+
 * install homebrew
 * `brew install gradle` / `brew upgrade gradle`
+* `brew install terraform`
 * `gradle init` (initial setup only)
+
+## AWS
+
+* `aws configure`, use creds from terraform user
+
+# Infra
+
+* `cd infra/tf`
+* `terraform init` (initial setup only)
+* `terraform plan`
+* `terraform apply -auto-approve`
 
 # Notes
 
