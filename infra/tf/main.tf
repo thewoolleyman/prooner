@@ -13,3 +13,7 @@ resource "aws_route53_record" "www" {
   ttl     = "300"
   records = ["10.0.0.2"]
 }
+
+resource "aws_s3_bucket" "home" {
+  bucket = "home.prooner.com"
+}
