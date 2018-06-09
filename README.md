@@ -13,6 +13,7 @@
 
 ## AWS
 
+* Region: `us-east-2 (Ohio)`
 * `aws configure`, use creds from terraform user
 
 ### CodeStar
