@@ -1,4 +1,6 @@
 site_name: Prooner
+markdown_extensions:
+- sane_lists
 pages:
 - Prooner.md
 - Setup.md
