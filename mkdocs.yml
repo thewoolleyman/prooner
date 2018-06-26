@@ -2,6 +2,7 @@ site_name: Prooner
 pages:
 - Prooner.md
 - Setup.md
+- Architecture.md
 - Infra.md
 - Notes.md
 - MkDocs.md
