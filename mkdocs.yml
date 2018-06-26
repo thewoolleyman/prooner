@@ -1,0 +1,5 @@
+site_name: Prooner
+pages:
+- Prooner.md
+- Setup.md
+- MkDocs.md
